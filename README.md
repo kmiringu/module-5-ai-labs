@@ -34,8 +34,8 @@ While the 100% accuracy looks impressive, the results are driven by the limitati
 ### Evidence of Overfitting: The Decision Tree Structure
 The two trees below were generated using **Bag of Words** (left) and **TF-IDF** (right). Despite the different vectorization methods, the structure is nearly identical, revealing that the model is simply splitting on the presence or absence of very specific keywords.
 
-![Decision Tree BoW](Bow.png)
-![Decision Tree TF-IDF](tfidf.png)
+![Decision Tree BoW](01_nlp_text_classifier/Bow.png)
+![Decision Tree TF-IDF](01_nlp_text_classifier/tfidf.png)
 
 **What these trees tell us:**
 *   **Perfect Splits (Gini = 0.0)**: Almost every leaf node has a Gini impurity of `0.0`. This means the model has created rules that perfectly separate the training data (e.g., "If `money` is present, then Positive"). In a real-world scenario with noise, a Gini of 0.0 is almost impossible to achieve this consistently.
