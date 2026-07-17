@@ -27,9 +27,7 @@ Three models were trained and evaluated on the synthetic test set. Note that due
 | **Logistic Regression** | TF-IDF | 1.00 | 1.00 | The "Golden Standard" for this specific data. |
 
 ## Honest Limitations
-While the 100% accuracy looks impressive, the results are driven by the limitations of the dataset rather than model superiority:
-
-*   **Template Memorization**: With only While the models achieved 100% accuracy on the test set, the results are driven by the limitations of the synthetic dataset rather than true linguistic understanding. The Decision Tree visualizations below provide irrefutable evidence of **template memorization**:
+*   **Template Memorization**: While the models achieved 100% accuracy on the test set, the results are driven by the limitations of the synthetic dataset rather than true linguistic understanding. The Decision Tree visualizations below provide irrefutable evidence of **template memorization**:
 
 ### Evidence of Overfitting: The Decision Tree Structure
 The two trees below were generated using **Bag of Words** (left) and **TF-IDF** (right). Despite the different vectorization methods, the structure is nearly identical, revealing that the model is simply splitting on the presence or absence of very specific keywords.
