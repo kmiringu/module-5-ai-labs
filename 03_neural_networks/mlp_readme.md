@@ -1,0 +1,5 @@
+Sklearn's breast_cancer dataset was fed into our model:  30 features, a hidden layer of 16 neurons, and a second hidden layer of 8 neurons, which combined had 641 parameters in total that the model was to learn from to give 1 output probability. 
+
+While achieving a 96% accuracy, this was not enough of a metric measure, as the model missed a malignant tumour labeling it as a false negative. In this medical situation, a sick patient missed could potentially mean a life. To fix this, I'd lower the threshold to capture more false alarms, i.e. declare benign cases as malignant with a condition of re-testing.  
+
+Although the dataset was split and the test set aside for validation, this was not adequate as it risked the integrity of the test data, through data leakage. Another arising issue was that the model had no early stopping point, risking memorisation and noise absorption.  Overall, the model is not yet appopriate for unsupervised clinical use at all.
